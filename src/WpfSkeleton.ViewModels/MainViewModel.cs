@@ -17,6 +17,9 @@ namespace WpfSkeleton.ViewModels
             if (service == null)
                 throw new ArgumentNullException(nameof(service));
 
+            if (messageBoxService == null)
+                throw new ArgumentNullException(nameof(messageBoxService));
+
             m_service = service;
             m_messageBoxService = messageBoxService;
         }
